@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFB000"
+    android:orientation="vertical"
+    tools:context="RegisterActivity"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <RelativeLayout
+        android:id="@+id/loginLayout"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:elevation="4dp"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:id="@+id/login_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="New Resident Registration" />
+
+        <RelativeLayout
+            android:background="@drawable/rounded_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_title"
+            android:backgroundTint="#ffff"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="70dp"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+                <TextView
+                    android:fontFamily="@font/pt_sans_narrow"
+                    android:labelFor="@id/text_email"
+                    android:text="name"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:theme="@style/EditTextTheme"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:id="@+id/edit_text_nama"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:hint="safehouse"
+                    android:inputType="text"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pt_sans_narrow"
+                    android:labelFor="@id/text_email"
+                    android:text="email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:theme="@style/EditTextTheme"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:id="@+id/edit_text_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:hint="safehouse@gmail.com"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:fontFamily="@font/pt_sans_narrow"
+                    android:labelFor="@id/edit_text_password"
+                    android:text="id"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:theme="@style/EditTextTheme"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:id="@+id/edit_text_finger"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_fingerprint_black_24dp"
+                    android:drawablePadding="10dp"
+                    android:inputType="numberDecimal"
+                    android:hint="ID"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:fontFamily="@font/pt_sans_narrow"
+                    android:labelFor="@id/edit_text_password"
+                    android:text="password"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:theme="@style/EditTextTheme"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:drawablePadding="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:id="@+id/edit_text_password"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:hint="Password"/>
+
+
+                <Button
+                    android:id="@+id/button_register"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:layout_margin="22dp"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="@color/colorAccent"
+                    android:fontFamily="@font/source_sans_pro_semibold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/user_profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/login_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/user_profile_image_background"
+            android:elevation="4dp"
+            android:src="@drawable/ic_boy"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

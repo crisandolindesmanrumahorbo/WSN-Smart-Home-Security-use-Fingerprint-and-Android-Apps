@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff"
+    tools:context=".AdminActivity">
+
+    <RelativeLayout
+        android:id="@+id/User"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:elevation="4dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/ic_boy"
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="4dp" />
+
+        <TextView
+            android:id="@+id/name_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/imageView"
+            android:textSize="18sp"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:text="Welcome to Apps," />
+
+        <TextView
+            android:id="@+id/text_view_name_current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_toEndOf="@id/name_current"
+            android:layout_toRightOf="@id/imageView"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:text="Cris!"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_name_current"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/source_sans_pro_light"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/imageView"
+            android:text="You are"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/text_view_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_name_current"
+            android:layout_marginLeft="4dp"
+            android:layout_toEndOf="@+id/status"
+            android:fontFamily="@font/source_sans_pro_light"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/imageView"
+            android:text="at Home"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <Button
+            android:id="@+id/admin_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:text="Add Resident"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/user_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/admin_register"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:text="Residents List"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button_notify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_list"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:text="Clear Notification"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/bt_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/button_notify"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:text="LOGOUT"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roomstatus"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/frame"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/textliving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/source_sans_pro_light"
+            android:text="Living Room is"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/living_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/textliving"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:text="1"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textbed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/living_room"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/source_sans_pro_light"
+            android:text="Bed Room is "
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/bed_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/living_room"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/textbed"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:text="1"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/kotak"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/daftarorang"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/frame"
+        android:elevation="4dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:textStyle="italic"
+            android:fontFamily="@font/source_sans_pro_light"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/jumlah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Hello World!"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/daftarorang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_group"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/pt_sans_narrow_bold"
+        android:text="Residents at home"
+        android:textColor="#B98500"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_below="@id/User"
+        android:id="@+id/roomstatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/pt_sans_narrow_bold"
+        android:text="Room Status"
+        android:textColor="#B98500"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

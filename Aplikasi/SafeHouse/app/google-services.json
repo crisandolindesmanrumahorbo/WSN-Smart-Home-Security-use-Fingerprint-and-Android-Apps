@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "647846856778",
+    "firebase_url": "https://pklapps.firebaseio.com",
+    "project_id": "pklapps",
+    "storage_bucket": "pklapps.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647846856778:android:94fe757da6aef7ef0bfeb3",
+        "android_client_info": {
+          "package_name": "com.example.safehouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647846856778-d5fg8gj16jidic23fm2dc3deqfdnmo88.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.safehouse",
+            "certificate_hash": "7eca3c1284e8d8e1d2633eeb1f055b1f855b70e9"
+          }
+        },
+        {
+          "client_id": "647846856778-2vj49c4lc0fusvaalaquco7jq0ke1cd9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHOyIk_YPd-8b8sbGMLF93Hu5v9IsWyCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647846856778-2vj49c4lc0fusvaalaquco7jq0ke1cd9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

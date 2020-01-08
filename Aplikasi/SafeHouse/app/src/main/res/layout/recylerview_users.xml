@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_button">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:background="@drawable/ic_boy"
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/imageView"
+                android:textSize="18sp"
+                android:fontFamily="@font/source_sans_pro_semibold"
+                android:text="Cris" />
+
+            <TextView
+                android:id="@+id/text_view_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_view_name"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="@font/source_sans_pro_light"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/imageView"
+                android:text="cris@gmail.com"
+                android:textSize="16sp"
+                />
+
+            <TextView
+                android:id="@+id/text_view_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentEnd="true"
+                android:hint="ID"
+                android:fontFamily="@font/pt_sans_narrow"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

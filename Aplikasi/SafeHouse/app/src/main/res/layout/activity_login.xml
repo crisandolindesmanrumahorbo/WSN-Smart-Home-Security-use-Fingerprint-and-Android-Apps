@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFB000"
+
+    android:orientation="vertical"
+    tools:context="LoginActivity"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <RelativeLayout
+        android:id="@+id/loginLayout"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/login_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:fontFamily="@font/source_sans_pro_semibold"
+            android:gravity="center_horizontal"
+            android:text="Resident Login"
+            android:textColor="@color/colorAccent"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_title"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="#ffff"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="30dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pt_sans_narrow"
+                    android:labelFor="@id/text_email"
+                    android:text="email"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/text_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:singleLine="true"
+                    android:theme="@style/EditTextTheme"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:layout_marginBottom="10dp"
+                    android:hint="safehouse@gmail.com"
+                    android:inputType="textEmailAddress"/>
+
+                <TextView
+                    android:labelFor="@id/edit_text_password"
+                    android:text="password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pt_sans_narrow"
+                    android:textSize="16sp"/>
+
+
+                <EditText
+                    android:id="@+id/edit_text_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/EditTextTheme"
+                    android:drawableLeft="@drawable/ic_lock"
+                    android:drawablePadding="10dp"
+                    android:hint="password"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/button_sign_in"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="22dp"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="LOGIN"
+                    android:fontFamily="@font/source_sans_pro_semibold"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/user_profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/login_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/user_profile_image_background"
+            android:elevation="4dp"
+            android:src="@drawable/ic_boy" />
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
